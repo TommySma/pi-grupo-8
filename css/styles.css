@@ -1,0 +1,171 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5px 50px;
+    background-color: rgb(59, 59, 59);
+}
+
+/* Estilos de la cabecera*/
+
+a{
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+    font-size: 25px;
+}
+
+header{
+    
+    background-color: rgb(198, 198, 198);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1500px;
+    padding: 5px;
+}
+
+#logo{
+    width: 15%;
+    justify-content:center;
+    align-items: center;
+    margin-left: 3%;
+}
+
+#logo img{
+    height: 200px;
+    width: 200px;
+}
+
+.navegador{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#lista1{
+    width: 50%;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 0px;
+    list-style: none;
+    padding: 0%;
+    align-items: center;
+}
+
+#lista2{
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: space-between;
+    margin-right: 5%;
+    list-style: none;
+    padding: 0%;
+    align-items: center;
+
+}
+
+.separador{
+    font-family: bold;
+    font-size: 30px;
+}
+
+/*aca termina el header*/
+
+/* Empieza Main */
+main{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1500px;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+.colizq{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(198, 198, 198);
+    width: 800px;
+    height: max-content;
+    
+}
+
+.card{
+    width: 380px;
+    margin: 10px;
+}
+
+.card img{
+    width: 380px;
+}
+
+.card button{
+    background-color:rgb(59, 59, 59);
+    color: rgb(198, 198, 198);
+}
+
+#aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /*background-color: rgb(175, 249, 139);*/
+    width: 570px;
+    height: max-content;
+    margin-left: 25px;;
+}
+
+.tituloAside{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: rgb(198, 198, 198);
+    height: max-content;
+    justify-content: center;
+}
+
+#tutoriales{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.reparacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(198, 198, 198);
+    margin-bottom: 3px;
+}
+
+#publi{
+    margin-top: 15px;
+}
+
+.publicidades{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(198, 198, 198);
+    margin-top: 10px;
+}
+
+.ad{
+    margin: 5px;
+    align-self: center;
+}
+
+#bestseller{
+    width: 800px;
+    text-align: center;
+    font-size: 30px;
+    height: 10px;
+}
