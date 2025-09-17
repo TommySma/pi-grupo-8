@@ -20,8 +20,10 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1500px;
+    width: 100vw;
     padding: 5px;
+    height: 18vh;
+    box-sizing: border-box
 }
 
 #logo{
@@ -37,7 +39,7 @@ header{
 }
 
 .navegador{
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -64,7 +66,6 @@ header{
     list-style: none;
     padding: 0%;
     align-items: center;
-
 }
 
 .separador{
@@ -168,4 +169,63 @@ main{
     text-align: center;
     font-size: 30px;
     height: 10px;
+}
+
+/*CSS LOGIN*/
+#h1-login {
+    font-size: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+#main-login {
+    background-color: #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    width: 25vw;
+    height: 65vh;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 20px; 
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #111010;
+    font-size: 20px;
+    margin-bottom: 25px;
+    background-color: #ccc;
+    width: 100%; 
+}
+
+input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #111010;
+    font-size: 20px;
+    margin-bottom: 25px;
+    background-color: #ccc;
+    width: 100%; /* 👈 igual que el email */
+}
+
+button[type="submit"] {
+    background-color: black;
+    color: aliceblue;
+    width: 100%; 
+    font-size: 20px;
+    padding: 10px; 
+    border: none;
+    cursor: pointer;
+}
+
+#signup {
+    color: black;
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
 }
