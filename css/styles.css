@@ -2,11 +2,11 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 5px 50px;
+    margin: 0px;
     background-color: rgb(59, 59, 59);
 }
 
-/* Estilos de la cabecera*/
+/* Estilos de la cabecera Desktop*/
 
 a{
     text-decoration: none;
@@ -26,16 +26,10 @@ header{
     box-sizing: border-box
 }
 
-#logo{
-    width: 15%;
-    justify-content:center;
-    align-items: center;
-    margin-left: 3%;
-}
-
 #logo img{
+    display: flex;
     height: 200px;
-    width: 200px;
+    width: 200px;  
 }
 
 .navegador{
@@ -73,9 +67,71 @@ header{
     font-size: 30px;
 }
 
+/* Estilos de la cabecera Mobile*/
+@media (max-width: 768px) {
+a{
+    font-size: 22px;
+}
+
+header{
+    background-color: rgb(198, 198, 198);
+    flex-direction: column;
+    padding: 0px;
+    height: 100vh;
+    box-sizing: border-box
+}
+
+#logo{
+    width: 100%;
+    display: flex;          
+    justify-content: center; 
+    align-items: center;     
+}  
+
+#logo img{
+    width: 300px;
+    height: 300px;
+}
+    
+
+.navegador{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   margin-bottom: 15px;
+}
+
+#lista1{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 0px;
+    align-items: center;
+}
+
+#lista2{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 0px;
+    align-items: center;
+}
+
+.separador{
+    font-family: bold;
+    font-size: 30px;
+    color: rgb(198, 198, 198);
+}
+}
 /*aca termina el header*/
 
-/* Empieza Main */
+/* Index-Desktop*/
 main{
     margin-top: 10px;
     display: flex;
@@ -93,7 +149,6 @@ main{
     background-color: rgb(198, 198, 198);
     width: 800px;
     height: max-content;
-    
 }
 
 .card{
@@ -171,11 +226,11 @@ main{
     height: 10px;
 }
 
-/*CSS LOGIN*/
+/*LOGIN Desktop*/
 #h1-login {
     font-size: 50px;
     padding-bottom: 50px;
-    text-align: center;
+    align-self: center;
 }
 
 #main-login {
@@ -186,7 +241,7 @@ main{
     justify-content: center;
     align-items: center;
     border-radius: 9px;
-    width: 25vw;
+    width: 30%;
     height: 65vh;
     margin-top: 50px;
     box-sizing: border-box;
@@ -234,4 +289,72 @@ input[type="checkbox"]{
     font-size: 20px;
     margin-top: 25px;
     text-align: center;
+}
+
+/*LOGIN Mobile*/
+@media (max-width: 768px) {
+
+ #h1-login {
+    font-size: 38px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+#main-login {
+    background-color: #ccc;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+    box-sizing: border-box;
+ 
+}
+
+input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #111010;
+    font-size: 20px;
+    margin-bottom: 25px;
+    background-color: #ccc;
+    
+}
+
+input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #111010;
+    font-size: 20px;
+    margin-bottom: 25px;
+    background-color: #ccc;
+    width: 100%;
+}
+
+button[ type="submit"] {
+    background-color: black;
+    color: aliceblue;
+    width: 100%; 
+    font-size: 20px;
+    padding: 10px; 
+    border: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]{
+    margin-top: 25px;
+    align-self:  center;
+}
+
+
+#signup {
+    color: black;
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+}
 }
