@@ -3,10 +3,12 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     margin: 0px;
-    background-color: rgb(198, 198, 198);
+    background-color: black;
 }
 
 /* Estilos de la cabecera Desktop*/
+
+
 
 a{
     text-decoration: none;
@@ -15,11 +17,11 @@ a{
 }
 
 header{
-    background-color: rgb(198, 198, 198);
+    background-color: whitesmoke;
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 10vh;
+    height: 25vh;
     box-sizing: border-box;
     align-items: center;
     justify-content: space-between;
@@ -58,7 +60,7 @@ input[type="text"] {
     border: none;
     border-bottom: 2px solid black;
     font-size: 20px;
-    background-color: rgb(198, 198, 198);;
+    background-color: whitesmoke;
     width: 100%;
     text-align: center;
 }
@@ -73,6 +75,8 @@ input[type="text"] {
 #lista1 li{
     padding-bottom: 25px;
 }
+
+
 
 
 /* Estilos de la cabecera Mobile*/
@@ -142,36 +146,47 @@ header{
 }
 
 /* Index-Desktop*/
-main{
-    margin-top: 10px;
+#mainHome{
+    margin-top: 0px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: 100vw;
-    padding: 5px;
+    padding: 0px;
     justify-content: space-between;
 }
 #categorias{
-   
-   width: 30vw;
+   background-color:  whitesmoke;
+   width: 10vw;
 }
 
 .colizq{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
-    background-color: rgb(198, 198, 198);
-    width: 800px;
+    background-color: none;
+    width: 87vw;
     height: max-content;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+#bestSeller{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 15px;
+    background-color: whitesmoke;
 }
 
 .card{
-    width: 380px;
+    width: 314px;
     margin: 10px;
 }
 
 .card img{
-    width: 380px;
+    width: 314px;
 }
 
 .card button{
@@ -179,46 +194,16 @@ main{
     color: rgb(198, 198, 198);
 }
 
-#aside{
+#Recomendados{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     flex-wrap: wrap;
-    /*background-color: rgb(175, 249, 139);*/
-    width: 570px;
-    height: max-content;
-    margin-left: 25px;;
-}
-
-.tituloAside{
-    display: flex;
     flex-direction: row;
-    text-align: center;
-    background-color: rgb(198, 198, 198);
-    height: max-content;
-    justify-content: center;
+    background-color: whitesmoke;
 }
 
-#publi{
-    margin-top: 15px;
-}
 
-.publicidades{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgb(198, 198, 198);
-    margin-top: 10px;
-}
-
-.ad{
-    margin: 5px;
-    align-self: center;
-}
-
-#bestseller{
-    width: 800px;
+#titBestseller{
+    width: 87vw;
     text-align: center;
     font-size: 30px;
     height: 10px;
