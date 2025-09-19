@@ -160,7 +160,7 @@ header{
    width: 10vw;
 }
 
-.colizq{
+.productosHome{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -199,6 +199,7 @@ header{
     flex-wrap: wrap;
     flex-direction: row;
     background-color: whitesmoke;
+    margin-bottom: 15px;
 }
 
 
@@ -207,6 +208,75 @@ header{
     text-align: center;
     font-size: 30px;
     height: 10px;
+}
+
+/*FOOTER INDEX */
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 30vh;
+    justify-content: space-between;
+}
+
+#logoFooter{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#logoFooter img{
+    align-self: center;
+    height: 100px;
+    width: 100px;
+    
+}
+
+#footerNombres{
+    margin-bottom: 0px;
+    align-items: center;
+}
+
+#redes{
+    margin-left: 160px;
+
+}
+
+#redes h2{
+    font-size: 30px;
+}
+
+#redes ul{
+    font-size: 20px;
+    
+}
+
+#listaRedes{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+#listaRedes li{
+    margin-bottom: 10px;
+}
+
+#newsletter{
+    margin-right: 20px;
+}
+
+input[type="email"] {
+    
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    background-color: whitesmoke;
+    width: 100%;
+    text-align: center;
 }
 
 /*LOGIN Desktop*/
