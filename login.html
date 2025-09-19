@@ -7,24 +7,15 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-      <header class="cabecera">
+<header class="cabecera">
         <div id="logo">
-           <a href="./index.html"><img src="./img/37871.png" alt="Logo Zara"></a>
+            <a href="./index.html"><img src="./img/37871.png" alt="Logo Zara"></a>
         </div>
-        <nav class="navegador">
-            <ul id="lista1">
-                <li class="separador">
-                    <a href="">NEW</a>
-                </li>
-                <li class="separador">|</li>
-                <li>
-                    <a href="./men-category.html">MAN</a>
-                </li>
-                <li class="separador">|</li>
-                <li>
-                    <a href="./woman-category.html">WOMAN</a>
-                </li>
-            </ul>
+           <div id="buscador">
+            <form action="./search-results.html" method="get">
+                <input type="text" name="buscador" value="" placeholder="Buscar">
+            </form>
+           </div>
             <ul id="lista2">
                 <li>
                     <a href="./login.html">LOG IN</a>
@@ -34,17 +25,24 @@
                     <a href="./register.html">REGISTRO</a>
                 </li>
             </ul>
-        </nav>
     </header>
-
-    <main id="main-login">
-    <h1 id="h1-login">LOG IN</h1>
+    <main id="main-login" >
+    <div>
+        <aside>
+            <ul id="lista1">
+                <li><a href="">NEW</a></li>
+                <li><a href="./men-category.html">MAN</a></li>
+                <li><a href="./woman-category.html">WOMAN</a></li>
+            </ul>
+        </aside>
+    </div> 
+    <h1 id="h1-forms">LOG IN</h1>
     <form action="index.html" method="GET">
         <div class="form">
-            <input type="email" value="" placeholder="Correo electrónico" >
+            <input type="email" name="email"  value="" placeholder="Correo electrónico" required>
         </div>
         <div class="form">
-            <input type="password" value="" placeholder="Contraseña" >
+            <input type="password" name="password"  value="" placeholder="Contraseña" required>
         </div>
         <div class="form">
             <button type="submit">Ingresar</button> 

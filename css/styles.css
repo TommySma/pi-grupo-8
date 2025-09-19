@@ -3,7 +3,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     margin: 0px;
-    background-color: rgb(59, 59, 59);
+    background-color: rgb(198, 198, 198);
 }
 
 /* Estilos de la cabecera Desktop*/
@@ -15,51 +15,37 @@ a{
 }
 
 header{
-    
     background-color: rgb(198, 198, 198);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     width: 100vw;
-    padding: 5px;
-    height: 18vh;
-    box-sizing: border-box
+    height: 10vh;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
 }
+
+#logo{
+    display: flex;
+    margin-top: 20px;
+} 
 
 #logo img{
-    display: flex;
-    height: 200px;
-    width: 200px;  
-}
-
-.navegador{
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-#lista1{
-    width: 50%;
-    justify-content: space-around;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: 0px;
-    list-style: none;
-    padding: 0%;
-    align-items: center;
+    height: 250px;
+    width: 250px;
 }
 
 #lista2{
     display: flex;
     flex-direction: row;
-    width: 20%;
-    justify-content: space-between;
-    margin-right: 5%;
+    justify-content: space-evenly;
+    margin-right:6px;
     list-style: none;
-    padding: 0%;
-    align-items: center;
+    padding: 0px;
+}
+
+#lista2 li{
+padding-right: 10px;
 }
 
 .separador{
@@ -67,10 +53,33 @@ header{
     font-size: 30px;
 }
 
+input[type="text"] {
+    
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    background-color: rgb(198, 198, 198);;
+    width: 100%;
+    text-align: center;
+}
+
+/* Categorias barra lateral desktop*/
+#lista1{
+    margin-left: 0px;
+    list-style: none;
+    padding-left: 20px;
+}
+
+#lista1 li{
+    padding-bottom: 25px;
+}
+
+
 /* Estilos de la cabecera Mobile*/
 @media (max-width: 768px) {
 a{
     font-size: 22px;
+   
 }
 
 header{
@@ -104,6 +113,7 @@ header{
 }
 
 #lista1{
+    order: 1;
     width: 100%;
     justify-content: center;
     display: flex;
@@ -114,11 +124,12 @@ header{
 }
 
 #lista2{
+    order:2;
     width: 100%;
-    justify-content: center;
+    justify-content:space-evenly;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 0px;
     align-items: center;
 }
@@ -129,7 +140,6 @@ header{
     color: rgb(198, 198, 198);
 }
 }
-/*aca termina el header*/
 
 /* Index-Desktop*/
 main{
@@ -137,9 +147,13 @@ main{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 1500px;
-    padding: 0px;
+    width: 100vw;
+    padding: 5px;
     justify-content: space-between;
+}
+#categorias{
+   
+   width: 30vw;
 }
 
 .colizq{
@@ -185,22 +199,6 @@ main{
     justify-content: center;
 }
 
-#tutoriales{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    justify-content: space-between;
-}
-
-.reparacion{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: rgb(198, 198, 198);
-    margin-bottom: 3px;
-}
-
 #publi{
     margin-top: 15px;
 }
@@ -227,25 +225,24 @@ main{
 }
 
 /*LOGIN Desktop*/
-#h1-login {
+#h1-forms {
     font-size: 50px;
-    padding-bottom: 50px;
     align-self: center;
+    width: 80%;
 }
 
-#main-login {
-    background-color: #ccc;
+#main-forms {
+    background-color:rgb(198, 198, 198);;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 9px;
-    width: 30%;
-    height: 65vh;
+    width: 28vw;
+    height: 70vh;
     margin-top: 50px;
-    box-sizing: border-box;
-    padding: 20px; 
+    box-sizing: border-box; 
 }
 
 input[type="email"] {
@@ -254,8 +251,8 @@ input[type="email"] {
     border-bottom: 1px solid #111010;
     font-size: 20px;
     margin-bottom: 25px;
-    background-color: #ccc;
-    width: 100%; 
+    background-color: rgb(198, 198, 198);;
+    width: 90%; 
 }
 
 input[type="password"] {
@@ -265,7 +262,7 @@ input[type="password"] {
     font-size: 20px;
     margin-bottom: 25px;
     background-color: #ccc;
-    width: 100%;
+    width: 90%; 
 }
 
 button[ type="submit"] {
@@ -290,17 +287,23 @@ input[type="checkbox"]{
     margin-top: 25px;
     text-align: center;
 }
+#login {
+    color: black;
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+}
 
 /*LOGIN Mobile*/
 @media (max-width: 768px) {
 
- #h1-login {
+ #h1-forms {
     font-size: 38px;
     padding-bottom: 50px;
     text-align: center;
 }
 
-#main-login {
+#main-forms {
     background-color: #ccc;
     display: flex;
     flex-wrap: wrap;
@@ -352,6 +355,13 @@ input[type="checkbox"]{
 
 
 #signup {
+    color: black;
+    font-size: 20px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#login {
     color: black;
     font-size: 20px;
     margin-top: 25px;
