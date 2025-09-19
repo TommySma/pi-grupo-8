@@ -3,8 +3,9 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     margin: 0px;
-    background-color: black;
+    background-color: whitesmoke;
 }
+
 
 /* Estilos de la cabecera Desktop*/
 
@@ -66,16 +67,27 @@ input[type="text"] {
 }
 
 /* Categorias barra lateral desktop*/
+
+#categorias{
+    display: flex;
+    flex-wrap:wrap ;
+    width: 10%;
+    justify-content:space-around ;
+    
+}
 #lista1{
     margin-left: 0px;
     list-style: none;
     padding-left: 20px;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 #lista1 li{
     padding-bottom: 25px;
+    display: flex;
+    flex-wrap:wrap ;
 }
-
 
 
 
@@ -87,7 +99,7 @@ a{
 }
 
 header{
-    background-color: rgb(198, 198, 198);
+    background-color: whitesmoke;
     flex-direction: column;
     padding: 0px;
     height: 100vh;
@@ -116,6 +128,12 @@ header{
    margin-bottom: 15px;
 }
 
+input[type="text"]{
+    height:90px ;
+    width: 70vw;
+    background-color:whitesmoke; 
+}
+
 #lista1{
     order: 1;
     width: 100%;
@@ -125,12 +143,13 @@ header{
     flex-direction: column;
     margin-left: 0px;
     align-items: center;
+    background-color:whitesmoke;
 }
+
 
 #lista2{
     order:2;
     width: 100%;
-    justify-content:space-evenly;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -211,22 +230,24 @@ header{
 
 /*LOGIN Desktop*/
 #h1-forms {
+    display: flex;
+    flex-wrap: wrap;
     font-size: 50px;
+    justify-content: center;
     align-self: center;
     width: 80%;
 }
 
 #main-forms {
-    background-color:rgb(198, 198, 198);;
+    background-color:whitesmoke;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 9px;
-    width: 28vw;
+    width: 90vw;
     height: 70vh;
-    margin-top: 50px;
     box-sizing: border-box; 
 }
 
@@ -236,7 +257,7 @@ input[type="email"] {
     border-bottom: 1px solid #111010;
     font-size: 20px;
     margin-bottom: 25px;
-    background-color: rgb(198, 198, 198);;
+    background-color:whitesmoke;
     width: 90%; 
 }
 
@@ -246,7 +267,7 @@ input[type="password"] {
     border-bottom: 1px solid #111010;
     font-size: 20px;
     margin-bottom: 25px;
-    background-color: #ccc;
+    background-color: whitesmoke;
     width: 90%; 
 }
 
@@ -258,6 +279,10 @@ button[ type="submit"] {
     padding: 10px; 
     border: none;
     cursor: pointer;
+}
+input[type="radio"]{
+    margin-bottom: 20px;
+    
 }
 
 input[type="checkbox"]{
@@ -289,7 +314,7 @@ input[type="checkbox"]{
 }
 
 #main-forms {
-    background-color: #ccc;
+    background-color: whitesmoke;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -309,7 +334,7 @@ input[type="email"] {
     border-bottom: 1px solid #111010;
     font-size: 20px;
     margin-bottom: 25px;
-    background-color: #ccc;
+    background-color:whitesmoke;
     
 }
 
@@ -319,13 +344,13 @@ input[type="password"] {
     border-bottom: 1px solid #111010;
     font-size: 20px;
     margin-bottom: 25px;
-    background-color: #ccc;
+    background-color:whitesmoke;
     width: 100%;
 }
 
 button[ type="submit"] {
     background-color: black;
-    color: aliceblue;
+    color: whitesmoke;
     width: 100%; 
     font-size: 20px;
     padding: 10px; 
