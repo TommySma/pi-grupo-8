@@ -3,7 +3,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     margin: 0px;
-    background-color: black;
+    background-color: whitesmoke;
 }
 
 /* Estilos de la cabecera Desktop*/
@@ -422,4 +422,76 @@ input[type="checkbox"]{
     margin-top: 25px;
     text-align: center;
 }
+}
+
+
+/* Estilos Product */
+
+#mainProducto{
+    margin-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100vw;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+#detalleProducto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 87vw;
+    background-color: none;
+}
+
+#fotoProduct img{
+    height: 600px;
+    width: 400px;
+}
+
+#descProduct{
+    margin-right: 30px;
+}
+
+#tituloProduct{
+    font-size: 300%;
+}
+
+#precioProduct{
+    font-size: 200%;
+}
+
+#descripcion{
+    width: 40vw;
+    font-size: 150%;
+}
+
+#formProd{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20%;
+}
+
+.casillaForm{
+    height: 25%;
+    width: 20%;
+    background-color: whitesmoke;
+    border: solid 1px black;
+}
+
+#btnCompra{
+    margin-top: 5%;
+    width: 70%;
+}
+
+#btnCompra a{
+    color: whitesmoke;
+}
+
+#cantidad{
+    width: 19.3%;
 }

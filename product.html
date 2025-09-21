@@ -7,24 +7,16 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-      <header class="cabecera">
+    <header class="cabecera">
         <div id="logo">
-           <a href="./index.html"><img src="./img/37871.png" alt="Logo Zara"></a>
+            <a href="./index.html"><img src="./img/37871.png" alt="Logo Zara"></a>
         </div>
-        <nav class="navegador">
-            <ul id="lista1">
-                <li class="separador">
-                    <a href="">NEW</a>
-                </li>
-                <li class="separador">|</li>
-                <li>
-                    <a href="./men-category.html">MAN</a>
-                </li>
-                <li class="separador">|</li>
-                <li>
-                    <a href="./woman-category.html">WOMAN</a>
-                </li>
-            </ul>
+        <div id="buscador">
+            <form action="./search-results.html" method="get">
+            <input type="text" name="buscador" value="" placeholder="Buscar">
+            </form>
+        </div>
+        <nav>
             <ul id="lista2">
                 <li>
                     <a href="./login.html">LOG IN</a>
@@ -36,5 +28,43 @@
             </ul>
         </nav>
     </header>
+    <main id="mainProducto">
+        <aside id="categorias" class="barra-lateral">
+            <ul id="lista1">
+                <li><a href="">NEW</a></li>
+                <li><a href="./men-category.html">MAN</a></li>
+                <li><a href="./woman-category.html">WOMAN</a></li>
+            </ul>
+        </aside>
+        <section id="detalleProducto">
+            <div id="fotoProduct">
+                <img src="./img/Product.jpg" alt="">
+            </div>
+            <div id="descProduct">
+                <h1 id="tituloProduct">BLAZER TRAJE RAYA DIPLOMÁTICA</h1>
+                <h3 id="precioProduct">315.990,00 ARS</h3>
+                <p id="descripcion">Blazer relaxed fit. Cuello con solapas de muesca. Manga larga acabada en puño con detalle de botones. Bolsillos de solapa en cadera. Detalle bolsillo interior. Bajo con aberturas en espalda. Cierre frontal de botonadura cruzada.</p>
+                <form action="./index.html" method="get" id="formProd">
+                    <div>
+                        <label for="">Talle: </label>
+                        <input type="radio" name="talle" value="S"> <span>S</span>
+                        <input type="radio" name="talle" value="M"> <span>M</span>
+                        <input type="radio" name="talle" value="L"> <span>L</span>
+                    </div>
+                    <div>
+                        <label for="">Color: </label>
+                        <input type="radio" name="color" value="Negro"> <span>Negro</span>
+                        <input type="radio" name="color" value="Negro"> <span>Azul</span>
+                        <input type="radio" name="color" value="Negro"> <span>Marron</span>
+                    </div>
+                        <input type="number" name="" placeholder="Cantidad" class="casillaForm" id="cantidad">
+                        <input type="reset" name="" placeholder="" class="casillaForm"  value="Reset">
+                    
+                    
+                </form>
+                <a href="./index.html"><button type="submit"  id="btnCompra"> FINALIZAR COMPRA</button></a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
