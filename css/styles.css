@@ -1,63 +1,143 @@
-body{
+body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0px;
     background-color: whitesmoke;
+    margin: 0px;
 }
 
+/* Cabecera Desktop*/
 
-/* Estilos de la cabecera Desktop*/
-
-
-
-a{
+a {
     text-decoration: none;
     color: rgb(59, 59, 59);
-    font-size: 25px;
 }
 
-header{
+header {
     background-color: whitesmoke;
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 25vh;
-    box-sizing: border-box;
+    height: 15vh;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
 }
 
-#logo{
+nav {
     display: flex;
-    margin-top: 20px;
-} 
+    flex-wrap: wrap;
+    align-items: center;
+}
 
-#logo img{
+#logo img {
     height: 250px;
     width: 250px;
 }
 
-#lista2{
+#lista2 {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-right:6px;
+    font-size: 16px;
+}
+
+#lista2 li {
+    padding-right: 10px;
     list-style: none;
-    padding: 0px;
 }
 
-#lista2 li{
-padding-right: 10px;
+ul {
+    padding-left: 0px;
 }
 
-.separador{
-    font-family: bold;
-    font-size: 30px;
+.separador {
+    font-size: 14px;
 }
 
 input[type="text"] {
-    
+
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+    background-color: whitesmoke;
+    width: 80%;
+    text-align: left;
+}
+
+/* Categorias barra lateral desktop*/
+#categorias {
+    background-color: whitesmoke;
+    width: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#lista1 li {
+    display: flex;
+    padding-bottom: 100px;
+    padding-top: 70px;
+    justify-content: center;
+    font-size: 25px;
+}
+
+/*FOOTER*/
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 30vh;
+    justify-content: space-between;
+}
+
+#logoFooter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#logoFooter img {
+    align-self: center;
+    height: 100px;
+    width: 100px;
+}
+
+#footerNombres {
+    margin-bottom: 0px;
+    align-items: center;
+}
+
+#redes {
+    margin-left: 160px;
+}
+
+#redes h2 {
+    font-size: 30px;
+}
+
+#redes ul {
+    font-size: 20px;
+}
+
+#listaRedes {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#listaRedes li {
+    margin-bottom: 10px;
+}
+
+#newsletter {
+    margin-right: 20px;
+}
+
+input[type="email"] {
     border: none;
     border-bottom: 2px solid black;
     font-size: 20px;
@@ -66,239 +146,145 @@ input[type="text"] {
     text-align: center;
 }
 
-/* Categorias barra lateral desktop*/
-
-#categorias{
-    display: flex;
-    flex-wrap:wrap ;
-    width: 10%;
-    justify-content:space-around ;
-    
-}
-#lista1{
-    margin-left: 0px;
-    list-style: none;
-    padding-left: 20px;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
-#lista1 li{
-    padding-bottom: 25px;
-    display: flex;
-    flex-wrap:wrap ;
-}
-
-
 
 /* Estilos de la cabecera Mobile*/
 @media (max-width: 768px) {
-a{
-    font-size: 22px;
+    header {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height:90vh;
+    }
    
-}
+    nav{
+        height: 10vh;
+    }
 
-header{
+    #logo {
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    #lista2 {
+        order: 2;
+        width: 50vw;
+        justify-content: center;
+        font-size: 15px;
+        padding-left: 30px;
+        box-sizing: border-box;
+    }
+
+    #buscador {
+        order: 1;
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+
+    input[type="text"] {
+        width: 90%;
+        height: 15px;
+        text-align: center;
+        background-color: whitesmoke;
+    }
+
+/*Barra lateral mobile*/
+#categorias {
     background-color: whitesmoke;
-    flex-direction: column;
-    padding: 0px;
-    height: 100vh;
-    box-sizing: border-box
+    width: 100%;
 }
 
-#logo{
-    width: 100%;
-    display: flex;          
-    justify-content: center; 
-    align-items: center;     
-}  
-
-#logo img{
-    width: 300px;
-    height: 300px;
-}
-    
-
-.navegador{
-    width: 100%;
-    height: 100%;
+#lista1 {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-   margin-bottom: 15px;
-}
-
-input[type="text"]{
-    height:90px ;
-    width: 70vw;
-    background-color:whitesmoke; 
-}
-
-#lista1{
-    order: 1;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin-left: 0px;
-    align-items: center;
-    background-color:whitesmoke;
-}
-
-
-#lista2{
-    order:2;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    margin-left: 0px;
-    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
-.separador{
-    font-family: bold;
-    font-size: 30px;
-    color: rgb(198, 198, 198);
+#lista1 li {
+    padding: 0px;
+    padding-top: 0px;
 }
 }
 
 /* Index-Desktop*/
-#mainHome{
+#mainHome {
     margin-top: 0px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 100vw;
+    width: 90%;
     padding: 0px;
-    justify-content: space-between;
-}
-#categorias{
-   background-color:  whitesmoke;
-   width: 10vw;
+    box-sizing: border-box;
 }
 
-.productosHome{
+.productosHome {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     flex-wrap: wrap;
-    background-color: none;
-    width: 87vw;
-    height: max-content;
     margin-right: 15px;
     margin-top: 15px;
+    box-sizing: border-box;
 }
 
-#bestSeller{
+#bestSeller {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     flex-direction: row;
     margin-bottom: 15px;
     background-color: whitesmoke;
 }
 
-.card{
+.card {
     width: 314px;
     margin: 10px;
 }
 
-.card img{
+.card img {
     width: 314px;
 }
 
-.card button{
-    background-color:rgb(59, 59, 59);
+.card button {
+    background-color: rgb(59, 59, 59);
     color: rgb(198, 198, 198);
 }
 
-#Recomendados{
+#Recomendados {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     flex-direction: row;
-    background-color: whitesmoke;
     margin-bottom: 15px;
+    background-color: whitesmoke;
 }
 
-
-#titBestseller{
+#titBestseller {
     width: 87vw;
     text-align: center;
     font-size: 30px;
     height: 10px;
 }
 
-/*FOOTER INDEX */
-.footer{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-color: whitesmoke;
-    width: 100vw;
-    height: 30vh;
-    justify-content: space-between;
-}
-
-#logoFooter{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#logoFooter img{
-    align-self: center;
-    height: 100px;
-    width: 100px;
-    
-}
-
-#footerNombres{
-    margin-bottom: 0px;
-    align-items: center;
-}
-
-#redes{
-    margin-left: 160px;
-
-}
-
-#redes h2{
-    font-size: 30px;
-}
-
-#redes ul{
-    font-size: 20px;
-    
-}
-
-#listaRedes{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-}
-#listaRedes li{
-    margin-bottom: 10px;
-}
-
-#newsletter{
-    margin-right: 20px;
-}
-
-input[type="email"] {
-    
-    border: none;
-    border-bottom: 2px solid black;
-    font-size: 20px;
-    background-color: whitesmoke;
-    width: 100%;
-    text-align: center;
-}
 
 /*LOGIN Desktop*/
+#main-forms {
+    background-color: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    width: 90%;
+    box-sizing: border-box;
+    padding-right: 200px;
+}
+
 #h1-forms {
     display: flex;
     flex-wrap: wrap;
@@ -308,18 +294,6 @@ input[type="email"] {
     width: 80%;
 }
 
-#main-forms {
-    background-color:whitesmoke;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 9px;
-    width: 90vw;
-    height: 70vh;
-    box-sizing: border-box; 
-}
 
 input[type="email"] {
     padding: 10px;
@@ -327,8 +301,9 @@ input[type="email"] {
     border-bottom: 1px solid #111010;
     font-size: 20px;
     margin-bottom: 25px;
-    background-color:whitesmoke;
-    width: 90%; 
+    background-color: whitesmoke;
+    width: 90%;
+    text-align: left;
 }
 
 input[type="password"] {
@@ -338,114 +313,56 @@ input[type="password"] {
     font-size: 20px;
     margin-bottom: 25px;
     background-color: whitesmoke;
-    width: 90%; 
+    width: 90%;
 }
 
 button[ type="submit"] {
     background-color: black;
     color: aliceblue;
-    width: 100%; 
+    width: 100%;
     font-size: 20px;
-    padding: 10px; 
+    padding: 10px;
     border: none;
     cursor: pointer;
 }
-input[type="radio"]{
+
+input[type="radio"] {
     margin-bottom: 20px;
-    
+
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
     margin-top: 25px;
-    align-self:  center;
+    align-self: center;
 }
 
 
 #signup {
     color: black;
     font-size: 20px;
-    margin-top: 25px;
     text-align: center;
 }
+
 #login {
     color: black;
     font-size: 20px;
-    margin-top: 25px;
     text-align: center;
 }
 
 /*LOGIN Mobile*/
 @media (max-width: 768px) {
 
- #h1-forms {
-    font-size: 38px;
-    padding-bottom: 50px;
-    text-align: center;
-}
+    #h1-forms {
+        font-size: 38px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
 
-#main-forms {
-    background-color: whitesmoke;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 9px;
-    width: 100%;
-    height: 100vh;
-    margin-top: 50px;
-    box-sizing: border-box;
- 
-}
-
-input[type="email"] {
-    padding: 10px;
-    border: none;
-    border-bottom: 1px solid #111010;
-    font-size: 20px;
-    margin-bottom: 25px;
-    background-color:whitesmoke;
+    #main-forms {
     
-}
-
-input[type="password"] {
-    padding: 10px;
-    border: none;
-    border-bottom: 1px solid #111010;
-    font-size: 20px;
-    margin-bottom: 25px;
-    background-color:whitesmoke;
-    width: 100%;
-}
-
-button[ type="submit"] {
-    background-color: black;
-    color: whitesmoke;
-    width: 100%; 
-    font-size: 20px;
-    padding: 10px; 
-    border: none;
-    cursor: pointer;
-}
-
-input[type="checkbox"]{
-    margin-top: 25px;
-    align-self:  center;
-}
-
-
-#signup {
-    color: black;
-    font-size: 20px;
-    margin-top: 25px;
-    text-align: center;
-}
-
-#login {
-    color: black;
-    font-size: 20px;
-    margin-top: 25px;
-    text-align: center;
+        width: 100%;
+        height: 100vh;
+        padding-right: 0px;
 }
 }
 
@@ -457,9 +374,11 @@ input[type="checkbox"]{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 100vw;
+    width: 90%;
     padding: 0px;
     justify-content: space-between;
+    box-sizing: border-box;
+    
 }
 
 #detalleProducto{
@@ -519,4 +438,14 @@ input[type="checkbox"]{
 
 #cantidad{
     width: 19.3%;
+}
+
+/*Product Mobile*/
+@media (max-width: 768px) {
+
+    #mainproducto{
+        width: 100%;
+        height: 100vh;
+        padding-right: 0px;
+}
 }
