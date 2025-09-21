@@ -3,52 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>login</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<header class="cabecera">
-        <div id="logo">
-            <a href="./index.html"><img src="./img/37871.png" alt="Logo Zara"></a>
-        </div>
-           <div id="buscador">
-            <form action="./search-results.html" method="get">
+      <header class="cabecera">
+            <div id="logo">
+                <a href="./index.html"><img src="./img/37871.png" alt="Logo Zara"></a>
+            </div>
+            <div id="buscador">
+                <form action="./search-results.html" method="get">
                 <input type="text" name="buscador" value="" placeholder="Buscar">
-            </form>
-           </div>
-            <ul id="lista2">
-                <li>
-                    <a href="./login.html">LOG IN</a>
-                </li>
-                <li class="separador">|</li>
-                <li>
-                    <a href="./register.html">REGISTRO</a>
-                </li>
-            </ul>
-    </header>
-    <main id="main-login" >
-    <div>
-        <aside>
+                </form>
+            </div>
+            <nav>
+                <ul id="lista2">
+                    <li>
+                        <a href="./login.html">LOG IN</a>
+                    </li>
+                    <li class="separador">|</li>
+                    <li>
+                        <a href="./register.html">REGISTRO</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <aside id="categorias" class="barra-lateral">
             <ul id="lista1">
                 <li><a href="">NEW</a></li>
                 <li><a href="./men-category.html">MAN</a></li>
                 <li><a href="./woman-category.html">WOMAN</a></li>
             </ul>
         </aside>
-    </div> 
+    
+
+    <main id="main-forms">
     <h1 id="h1-forms">LOG IN</h1>
-    <form action="index.html" method="GET">
-        <div class="form">
+    <form action= "index.html"  method="GET">
+        <div>
             <input type="email" name="email"  value="" placeholder="Correo electrónico" required>
         </div>
-        <div class="form">
-            <input type="password" name="password"  value="" placeholder="Contraseña" required>
+        <div >
+            <input type="password" name="password"  value="" placeholder="Contraseña" required >
         </div>
-        <div class="form">
-            <button type="submit">Ingresar</button> 
+        <div>
+            <input type="radio" name="Recordar info">
+            <label for="Terminos & condiciones">Recordarme</label>
         </div>
+        <div >
+            <button type="submit">ENVIAR</button> 
+        </div>
+        
     </form>
-    <a id="signup" href="./register.html">No tengo cuenta</a>
+    <a id="login" href="./register.html">No tengo una cuenta</a>
     </main>
 
     <footer>

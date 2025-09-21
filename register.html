@@ -7,35 +7,36 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="cabecera">
-        <div id="logo">
-           <a href="./index.html"><img src="./img/37871.png" alt="Logo Zara"></a>
-        </div>
-        <nav class="navegador">
+      <header class="cabecera">
+            <div id="logo">
+                <a href="./index.html"><img src="./img/37871.png" alt="Logo Zara"></a>
+            </div>
+            <div id="buscador">
+                <form action="./search-results.html" method="get">
+                <input type="text" name="buscador" value="" placeholder="Buscar">
+                </form>
+            </div>
+            <nav>
+                <ul id="lista2">
+                    <li>
+                        <a href="./login.html">LOG IN</a>
+                    </li>
+                    <li class="separador">|</li>
+                    <li>
+                        <a href="./register.html">REGISTRO</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    
+        <aside id="categorias" class="barra-lateral">
             <ul id="lista1">
-                <li class="separador">
-                    <a href="">NEW</a>
-                </li>
-                <li class="separador">|</li>
-                <li>
-                    <a href="./men-category.html">MAN</a>
-                </li>
-                <li class="separador">|</li>
-                <li>
-                    <a href="./woman-category.html">WOMAN</a>
-                </li>
+                <li><a href="">NEW</a></li>
+                <li><a href="./men-category.html">MAN</a></li>
+                <li><a href="./woman-category.html">WOMAN</a></li>
             </ul>
-            <ul id="lista2">
-                <li>
-                    <a href="./login.html">LOG IN</a>
-                </li>
-                <li class="separador">|</li>
-                <li>
-                    <a href="./register.html"><b>REGISTRO</b></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        </aside>
+    
 
     <main id="main-forms">
     <h1 id="h1-forms">REGISTRARSE</h1>
@@ -58,7 +59,7 @@
             <label for="Terminos & condiciones">Acepto terminos & condiciones</label>
         </div>
     </form>
-    <a id="login" href="./register.html">Ya tengo una cuenta</a>
+    <a id="login" href="./login.html">Ya tengo una cuenta</a>
     </main>
 
     <footer>
