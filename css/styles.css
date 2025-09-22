@@ -498,11 +498,11 @@ input[type="checkbox"]{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    height: 20%;
+    height: 25%;
 }
 
 .casillaForm{
-    height: 25%;
+    height: 40%;
     width: 20%;
     background-color: whitesmoke;
     border: solid 1px black;
@@ -519,4 +519,12 @@ input[type="checkbox"]{
 
 #cantidad{
     width: 19.3%;
+}
+
+#cantYReset{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
 }
