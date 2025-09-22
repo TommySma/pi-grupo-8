@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prodcut ...</title>
+    <title>product</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <header class="cabecera">
         <div id="logo">
             <a href="./index.html"><img src="./img/37871.png" alt="Logo Zara"></a>
         </div>
-        <div id="buscador">
-            <form action="./search-results.html" method="get">
-            <input type="text" name="buscador" value="" placeholder="Buscar">
-            </form>
-        </div>
         <nav>
+            <div id="buscador">
+                <form action="./search-results.html" method="get">
+                    <input type="text" name="buscador" value="" placeholder="Buscar">
+                </form>
+            </div>
+
             <ul id="lista2">
                 <li>
                     <a href="./login.html">LOG IN</a>
@@ -28,15 +31,16 @@
             </ul>
         </nav>
     </header>
-    <main id="mainProducto">
 
-        <aside id="categorias" class="barra-lateral">
-            <ul id="lista1">
-                <li><a href="">NEW</a></li>
-                <li><a href="./men-category.html">MAN</a></li>
-                <li><a href="./woman-category.html">WOMAN</a></li>
-            </ul>
-        </aside>
+    <aside id="categorias">
+        <ul id="lista1">
+            <li><a href="">NEW</a></li>
+            <li><a href="./men-category.html">MAN</a></li>
+            <li><a href="./woman-category.html">WOMAN</a></li>
+        </ul>
+    </aside>
+
+    <main id="mainProducto">
         <section id="detalleProducto">
             <div id="fotoProduct">
                 <img src="./img/Product.jpg" alt="">
@@ -44,7 +48,9 @@
             <div id="descProduct">
                 <h1 id="tituloProduct">BLAZER TRAJE RAYA DIPLOMÁTICA</h1>
                 <h3 id="precioProduct">315.990,00 ARS</h3>
-                <p id="descripcion">Blazer relaxed fit. Cuello con solapas de muesca. Manga larga acabada en puño con detalle de botones. Bolsillos de solapa en cadera. Detalle bolsillo interior. Bajo con aberturas en espalda. Cierre frontal de botonadura cruzada.</p>
+                <p id="descripcion">Blazer relaxed fit. Cuello con solapas de muesca. Manga larga acabada en puño con
+                    detalle de botones. Bolsillos de solapa en cadera. Detalle bolsillo interior. Bajo con aberturas en
+                    espalda. Cierre frontal de botonadura cruzada.</p>
                 <form action="./index.html" method="get" id="formProd">
                     <div>
                         <label for="">Talle: </label>
@@ -63,8 +69,34 @@
                         <input type="reset" name="" placeholder="" class="casillaForm"  value="Reset">
                     </div>                 
                 </form>
-                <a href="./index.html"><button type="submit"  id="btnCompra"> FINALIZAR COMPRA</button></a>
+                <a href="./index.html"><button type="submit" id="btnCompra"> FINALIZAR COMPRA</button></a>
             </div>
         </section>
     </main>
+    <footer class="footer">
+        <section id="redes">
+            <h2>Nuestras Redes:</h2>
+            <ul id="listaRedes">
+                <li>Instagram</li>
+                <li>TikTok</li>
+                <li>X</li>
+                <li>YouTube</li>
+            </ul>
+        </section>
+        <div id="logoFooter">
+            <img src="./img/37871.png" alt="">
+            <div id="footerNombres">
+                <h3>Mirko Bibulich</h3>
+                <h3>Tommy Smaevich</h3>
+            </div>
+        </div>
+        <section id="newsletter">
+            <h2>UNETE A NUESTRO NEWSLETTER</h2>
+            <form action="" method="get">
+                <input type="email" name="emailUser" placeholder="Ingrese su Email">
+            </form>
+
+        </section>
+    </footer>
+
 </html>

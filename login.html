@@ -1,66 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-      <header class="cabecera">
-            <div id="logo">
-                <a href="./index.html"><img src="./img/37871.png" alt="Logo Zara"></a>
-            </div>
+    <header class="cabecera">
+        <div id="logo">
+            <a href="./index.html"><img src="./img/37871.png" alt="Logo Zara"></a>
+        </div>
+        <nav>
             <div id="buscador">
                 <form action="./search-results.html" method="get">
-                <input type="text" name="buscador" value="" placeholder="Buscar">
+                    <input type="text" name="buscador" value="" placeholder="Buscar">
                 </form>
             </div>
-            <nav>
-                <ul id="lista2">
-                    <li>
-                        <a href="./login.html">LOG IN</a>
-                    </li>
-                    <li class="separador">|</li>
-                    <li>
-                        <a href="./register.html">REGISTRO</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    
-        <aside id="categorias" class="barra-lateral">
-            <ul id="lista1">
-                <li><a href="">NEW</a></li>
-                <li><a href="./men-category.html">MAN</a></li>
-                <li><a href="./woman-category.html">WOMAN</a></li>
+
+            <ul id="lista2">
+                <li>
+                    <a href="./login.html">LOG IN</a>
+                </li>
+                <li class="separador">|</li>
+                <li>
+                    <a href="./register.html">REGISTRO</a>
+                </li>
             </ul>
-        </aside>
-    
+        </nav>
+    </header>
+
+    <aside id="categorias">
+        <ul id="lista1">
+            <li><a href="">NEW</a></li>
+            <li><a href="./men-category.html">MAN</a></li>
+            <li><a href="./woman-category.html">WOMAN</a></li>
+        </ul>
+    </aside>
 
     <main id="main-forms">
-    <h1 id="h1-forms">LOG IN</h1>
-    <form action= "index.html"  method="GET">
-        <div>
-            <input type="email" name="email"  value="" placeholder="Correo electrónico" required>
-        </div>
-        <div >
-            <input type="password" name="password"  value="" placeholder="Contraseña" required >
-        </div>
-        <div>
-            <input type="radio" name="Recordar info">
-            <label for="Terminos & condiciones">Recordarme</label>
-        </div>
-        <div >
-            <button type="submit">ENVIAR</button> 
-        </div>
-        
-    </form>
-    <a id="login" href="./register.html">No tengo una cuenta</a>
+        <h1 id="h1-forms">LOG IN</h1>
+        <form action="index.html" method="GET">
+            <div>
+                <input type="email" name="email" value="@gmail.com" placeholder="Correo electrónico" required>
+            </div>
+            <div>
+                <input type="password" name="password" value="" placeholder="Contraseña" required>
+            </div>
+            <div>
+                <input type="radio" name="Recordar info">
+                <label for="Terminos & condiciones">Recordarme</label>
+            </div>
+            <div>
+                <button type="submit">ENVIAR</button>
+            </div>
+
+        </form>
+        <a id="login" href="./register.html">No tengo una cuenta</a>
     </main>
 
-    <footer>
+    <footer class="footer">
 
+        <section id="redes">
+            <h2>Nuestras Redes:</h2>
+            <ul id="listaRedes">
+                <li>Instagram</li>
+                <li>TikTok</li>
+                <li>X</li>
+                <li>YouTube</li>
+            </ul>
+        </section>
+        <div id="logoFooter">
+            <img src="./img/37871.png" alt="">
+            <div id="footerNombres">
+                <h3>Mirko Bibulich</h3>
+                <h3>Tommy Smaevich</h3>
+            </div>
+
+        </div>
+        <section id="newsletter">
+            <h2>UNETE A NUESTRO NEWSLETTER</h2>
+            <form action="" method="get">
+                <input type="email" name="emailUser" placeholder="Ingrese su Email">
+            </form>
+
+        </section>
     </footer>
 </body>
+
 </html>
