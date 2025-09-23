@@ -21,13 +21,13 @@ header {
     height: 15vh;
     align-items: center;
     justify-content: space-between;
-    box-sizing: border-box;
 }
 
 nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    box-sizing: border-box;
 }
 
 #logo img {
@@ -88,6 +88,7 @@ input[type="text"] {
     background-color: whitesmoke;
     width: 100%;
     justify-content: space-between;
+    border-top: 1px black solid;
 }
 
 #logoFooter {
@@ -137,6 +138,11 @@ input[type="text"] {
 
 #newsletter {
     margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 /* Estilos de la cabecera Mobile*/
@@ -291,7 +297,11 @@ input[type="text"] {
 }
 
 .card {
-    width: 314px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
     margin: 10px;
 }
 
@@ -299,10 +309,6 @@ input[type="text"] {
     width: 314px;
 }
 
-.card button {
-    background-color: rgb(59, 59, 59);
-    color: rgb(198, 198, 198);
-}
 
 #Recomendados {
     display: flex;
@@ -315,11 +321,63 @@ input[type="text"] {
 
 #titBestseller {
     width: 87vw;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-size: 30px;
     height: 10px;
 }
 
+/* Estilos index mobile*/
+@media (max-width: 768px) {
+#mainHome {
+    width: 100%;
+}
+.productosHome {
+    margin-right: 0px;
+    margin-top: 0px;
+    width: 100%;
+}
+
+#bestSeller {
+   width: 100%;
+}
+
+#titBestseller {
+    
+    text-align: center;
+    width: 100%;
+    
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+}
+
+.card img {
+    max-width: 90%;
+    height: auto;
+}
+
+.bt-mas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#Recomendados {
+   width: 100%;
+}
+
+
+}
 
 /*LOGIN Desktop*/
 #main-forms {
@@ -434,9 +492,9 @@ input[type="checkbox"] {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 87vw;
-    background-color: none;
+    align-items: center;
 }
 
 #fotoProduct img {
@@ -445,11 +503,18 @@ input[type="checkbox"] {
 }
 
 #descProduct {
-    margin-right: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 50%;
 }
 
 #tituloProduct {
+    text-align: center;
     font-size: 300%;
+
 }
 
 #precioProduct {
@@ -457,52 +522,117 @@ input[type="checkbox"] {
 }
 
 #descripcion {
-    width: 40vw;
+    width: 100%;
     font-size: 150%;
+    text-align: center;
 }
 
 #formProd {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 25%;
+    width: 100%;
 }
 
-.casillaForm{
-    height: 25%;
-    width: 20%;
-    background-color: whitesmoke;
-    border: solid 1px black;
+#formProd input[type="radio"] {
+    margin-bottom: 0px;
+}
+
+#talles {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+#color {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+
+#cantYReset {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
 }
 
 #btnCompra {
     margin-top: 5%;
-    width: 70%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-#btnCompra a {
-    color: whitesmoke;
+#btnCompra button[type="submit"] {
+    width: 31%;
 }
 
 #cantidad {
-    width: 19.3%;
+    width: 20%;
+    font-size: 20px;
 }
 
-#cantYReset{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 50%;
+#reset{
+    width: 10%;
 }
+
 
 /*Product Mobile*/
 @media (max-width: 768px) {
-
-    #mainproducto {
+    #mainProducto {
         width: 100%;
-        height: 100vh;
-        padding-right: 0px;
+        justify-content: center;
+    }
+
+    #detalleProducto {
+        justify-content: center;
+        width: 100vw;
+    }
+
+    #fotoProduct img {
+        height: auto;
+        width: 100%;
+    }
+
+    #descProduct {
+        width: 100vw;
+    }
+
+    #tituloProduct {
+        font-size: 200%;
+    }
+
+    #precioProduct {
+        font-size: 180%;
+    }
+
+    #descripcion {
+        width: 100%;
+        font-size: 130%;
+        text-align: justify;
+        margin: 7px;
+    }
+
+
+    #btnCompra {
+        margin-top: 5%;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    #btnCompra button[type="submit"] {
+        width: 82%;
+    }
+
+    #cantidad {
+        width: 50%;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #reset{
+    width: 30%;
     }
 }

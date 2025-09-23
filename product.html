@@ -42,34 +42,36 @@
 
     <main id="mainProducto">
         <section id="detalleProducto">
-            <div id="fotoProduct">
-                <img src="./img/Product.jpg" alt="">
-            </div>
+            <div id="fotoProduct"><img src="./img/Product.jpg" alt=""></div>
             <div id="descProduct">
                 <h1 id="tituloProduct">BLAZER TRAJE RAYA DIPLOMÁTICA</h1>
                 <h3 id="precioProduct">315.990,00 ARS</h3>
                 <p id="descripcion">Blazer relaxed fit. Cuello con solapas de muesca. Manga larga acabada en puño con
                     detalle de botones. Bolsillos de solapa en cadera. Detalle bolsillo interior. Bajo con aberturas en
                     espalda. Cierre frontal de botonadura cruzada.</p>
-                <form action="./index.html" method="get" id="formProd">
-                    <div>
+                <form action="./index.html" method="get" id="formProd" >
+
+                    <div id="talles" >
                         <label for="">Talle: </label>
                         <input type="radio" name="talle" value="S"> <span>S</span>
                         <input type="radio" name="talle" value="M"> <span>M</span>
                         <input type="radio" name="talle" value="L"> <span>L</span>
                     </div>
-                    <div>
+
+                    <div id="color">
                         <label for="">Color: </label>
                         <input type="radio" name="color" value="Negro"> <span>Negro</span>
                         <input type="radio" name="color" value="Negro"> <span>Azul</span>
                         <input type="radio" name="color" value="Negro"> <span>Marron</span>
                     </div>
+
                     <div id="cantYReset">
-                        <input type="number" name="" placeholder="Cantidad" class="casillaForm" id="cantidad">
-                        <input type="reset" name="" placeholder="" class="casillaForm"  value="Reset">
-                    </div>                 
+                        <input type="number" name="" placeholder="Cantidad" id="cantidad">
+                        <input type="reset" name="" placeholder=""  value="Reset" id="reset">
+                    </div>
+                    <div id="btnCompra"><button type="submit" > FINALIZAR COMPRA</button></div>
                 </form>
-                <a href="./index.html"><button type="submit" id="btnCompra"> FINALIZAR COMPRA</button></a>
+
             </div>
         </section>
     </main>
@@ -83,7 +85,7 @@
                 <li>YouTube</li>
             </ul>
         </section>
-        
+
         <div id="logoFooter">
             <img src="./img/37871.png" alt="">
             <div id="footerNombres">
@@ -91,7 +93,7 @@
                 <h3>Tommy Smaevich</h3>
             </div>
         </div>
-        
+
         <section id="newsletter">
             <h2>UNETE A NUESTRO NEWSLETTER</h2>
             <form action="" method="get">
