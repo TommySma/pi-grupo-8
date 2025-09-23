@@ -88,8 +88,6 @@ input[type="text"] {
     background-color: whitesmoke;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid black;
 }
 
 #logoFooter {
@@ -468,10 +466,10 @@ input[type="checkbox"] {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
-    height: 20%;
+    height: 25%;
 }
 
-.casillaForm {
+.casillaForm{
     height: 25%;
     width: 20%;
     background-color: whitesmoke;
@@ -489,6 +487,14 @@ input[type="checkbox"] {
 
 #cantidad {
     width: 19.3%;
+}
+
+#cantYReset{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50%;
 }
 
 /*Product Mobile*/
