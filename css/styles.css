@@ -305,6 +305,19 @@ input[type="text"] {
     margin: 1%;
 }
 
+.bt-mas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    
+}
+
 .nomProd{
     width: 100%;
 }
@@ -330,6 +343,16 @@ input[type="text"] {
     justify-content: center;
     font-size: 30px;
     height: 10px;
+}
+
+#noresults{
+     width: 87vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    height: 10px;
+    display: none;
 }
 
 /* Estilos index mobile*/
@@ -361,25 +384,23 @@ input[type="text"] {
     align-items: center;
     text-align: center;
     width: 100%;
-    margin: 10px;
+    box-sizing: border-box;
+    margin: 0px;
+    margin-bottom: 10px;
 }
 
 .card img {
-    max-width: 90%;
+    max-width: 100%;
     height: auto;
 }
 
 .bt-mas {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    width:80% ;
 }
 
 #Recomendados {
    width: 100%;
 }
-
 
 }
 
@@ -435,6 +456,7 @@ button[ type="submit"] {
     padding: 10px;
     border: none;
     cursor: pointer;
+
 }
 
 input[type="radio"] {
@@ -445,6 +467,7 @@ input[type="radio"] {
 input[type="checkbox"] {
     margin-top: 25px;
     align-self: center;
+    margin-bottom: 10%;
 }
 
 
@@ -460,9 +483,6 @@ input[type="checkbox"] {
     text-align: center;
 }
 
-.bt-mas{
-    width: 100%;
-}
 
 /*LOGIN Mobile*/
 @media (max-width: 768px) {
@@ -566,7 +586,6 @@ input[type="checkbox"] {
 }
 
 #btnCompra {
-    margin-top: 5%;
     margin: 20px;
     display: flex;
     justify-content: center;
