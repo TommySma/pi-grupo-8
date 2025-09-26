@@ -302,7 +302,11 @@ input[type="text"] {
     justify-content: center;
     text-align: center;
     width: 20%;
-    margin: 10px;
+    margin: 1%;
+}
+
+.nomProd{
+    width: 100%;
 }
 
 .card img {
@@ -454,6 +458,10 @@ input[type="checkbox"] {
     color: black;
     font-size: 20px;
     text-align: center;
+}
+
+.bt-mas{
+    width: 100%;
 }
 
 /*LOGIN Mobile*/
