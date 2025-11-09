@@ -42,29 +42,14 @@
 
     <main id="mainProducto">
         <section id="detalleProducto">
-            <div id="fotoProduct"><img src="./img/product.jpg" alt=""></div>
+            <div id="fotoProduct"></div>
             <div id="descProduct">
-                <h1 id="tituloProduct">BLAZER TRAJE RAYA DIPLOMÁTICA</h1>
-                <h3 id="precioProduct">315.990,00 ARS</h3>
-                <p id="descripcion">Blazer relaxed fit. Cuello con solapas de muesca. Manga larga acabada en puño con
-                    detalle de botones. Bolsillos de solapa en cadera. Detalle bolsillo interior. Bajo con aberturas en
-                    espalda. Cierre frontal de botonadura cruzada.</p>
+                <h1 id="tituloProduct"></h1>
+                <h3 id="precioProduct"></h3>
+                <p id="descripcion"></p>
+                <div id="datosProduct"></div> 
+
                 <form action="./index.html" method="get" id="formProd" >
-
-                    <div id="talles" >
-                        <label for="">Talle: </label>
-                        <input type="radio" name="talle" value="S"> <span>S</span>
-                        <input type="radio" name="talle" value="M"> <span>M</span>
-                        <input type="radio" name="talle" value="L"> <span>L</span>
-                    </div>
-
-                    <div id="color">
-                        <label for="">Color: </label>
-                        <input type="radio" name="color" value="Negro"> <span>Negro</span>
-                        <input type="radio" name="color" value="Negro"> <span>Azul</span>
-                        <input type="radio" name="color" value="Negro"> <span>Marron</span>
-                    </div>
-
                     <div id="cantYReset">
                         <input type="number" name="cantidad" placeholder="Cantidad" id="cantidad">
                         <input type="reset" name="" placeholder=""  value="Reset" id="reset">
@@ -73,6 +58,14 @@
                 </form>
 
             </div>
+        </section>
+        
+        <section id="reviews">
+            <hr id= "separador">
+            <h2 id="tit-reviews"> Opiniones del Producto </h2>
+            <p id = "rating"></p>
+            <p id = "comment"></p>
+            
         </section>
     </main>
     <footer class="footer">
@@ -99,8 +92,8 @@
             <form action="" method="get">
                 <input type="email" name="emailUser" placeholder="Ingrese su Email">
             </form>
-
         </section>
     </footer>
-
+    <script src="./js/product.js"></script>
+</body>
 </html>

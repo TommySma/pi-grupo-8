@@ -534,7 +534,7 @@ input[type="checkbox"] {
 
 #fotoProduct img {
     height: 600px;
-    width: 400px;
+    width: auto;
 }
 
 #descProduct {
@@ -549,6 +549,7 @@ input[type="checkbox"] {
 #tituloProduct {
     text-align: center;
     font-size: 300%;
+    width: 100%;
 
 }
 
@@ -557,9 +558,67 @@ input[type="checkbox"] {
 }
 
 #descripcion {
+    display: flex;
+    flex-wrap: wrap; 
+    flex-direction: row;
     width: 100%;
     font-size: 150%;
     text-align: center;
+}
+
+#datosProduct{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.datos{
+   width: 100%;
+   text-align: center;
+   font-size: 120%;
+}
+.tags{
+    width: 30%;
+    text-align: center;
+    font-size: 130%;
+}
+
+#reviews{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    
+}
+#separador{
+    width: 100%;
+}
+
+#tit-reviews{
+    font-size: 40px;
+    margin: 0%;
+}
+
+#rating{
+height: 3%;
+font-size: 40px;
+display: flex;
+align-items: center;
+}
+
+#rating img{
+    height: 35px;
+    align-self: center;
+}
+
+#comment{
+    font-size: 25px;
+}
+
+#comment img{
+    height: 20px;
 }
 
 #formProd {
