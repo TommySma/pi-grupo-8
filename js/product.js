@@ -17,17 +17,17 @@ fetch('https://dummyjson.com/products')
         document.querySelector("#descripcion").innerHTML = `${p.description}`;
         document.querySelector("#datosProduct").innerHTML += `
           <p class="datos">Categoria:<a href="./category.html?category=${p.category}"> ${p.category.toUpperCase()}</a></p>`;
-        
+
         const cantidad = document.querySelector("#cantidad");
         cantidad.placeholder = `Stock disponible: ${p.stock}`;
         cantidad.max = p.stock
         cantidad.min = 1
 
         let boton = document.querySelector("#btnCompra")
-        boton.addEventListener('click',function(e){
-          if (Number(cantidad.value) < 1){
+        boton.addEventListener('click', function (e) {
+          if (Number(cantidad.value) < 1) {
             e.preventDefault();
-            document.querySelector("#label").style.color="red" 
+            document.querySelector("#label").style.color = "red"
           }
         })
 
@@ -39,15 +39,13 @@ fetch('https://dummyjson.com/products')
 
         document.querySelector("#rating").innerHTML = `${p.rating}<img src ="./img/estrella.png" alt ="estrella"> `;
 
-        if (p.reviews) {
-          for (let ii = 0; ii < p.reviews.length; ii++) {
-            let fecha = ''
+        for (let ii = 0; ii < p.reviews.length; ii++) {
+          let fecha = ''
 
-            for (let jj = 0; jj < 10; jj++) {
-              fecha += `${p.reviews[ii].date[jj]}`
-            }
-            document.querySelector("#comment").innerHTML += `<li> ${p.reviews[ii].rating} <img src ="./img/estrella.png" alt ="estrella"> ${p.reviews[ii].comment} ${fecha}</li> `;
+          for (let jj = 0; jj < 10; jj++) {
+            fecha += `${p.reviews[ii].date[jj]}`
           }
+          document.querySelector("#comment").innerHTML += `<li> ${p.reviews[ii].rating} <img src ="./img/estrella.png" alt ="estrella"> ${p.reviews[ii].comment} ${fecha}</li> `;
         }
       }
     }
