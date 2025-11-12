@@ -34,9 +34,8 @@
 
     <aside id="categorias">
         <ul id="lista1">
-            <li><a href="">NEW</a></li>
-            <li><a href="./men-category.html">MAN</a></li>
-            <li><a href="./woman-category.html">WOMAN</a></li>
+            <li><a href="./category.html?category=beauty">BEAUTY</a></li>
+            <li><a href="./category.html?category=fragrances">FRAGRANCES</a></li>
         </ul>
     </aside>
 
@@ -51,6 +50,7 @@
 
                 <form action="./index.html" method="get" id="formProd" >
                     <div id="cantYReset">
+                        <label id = "label">Seleccione una cantidad</label>
                         <input type="number" name="cantidad" placeholder="Cantidad" id="cantidad">
                         <input type="reset" name="" placeholder=""  value="Reset" id="reset">
                     </div>
@@ -64,7 +64,7 @@
             <hr id= "separador">
             <h2 id="tit-reviews"> Opiniones del Producto </h2>
             <p id = "rating"></p>
-            <p id = "comment"></p>
+            <ul id = "comment"></ul>
             
         </section>
     </main>
