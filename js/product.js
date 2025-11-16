@@ -28,6 +28,7 @@ fetch('https://dummyjson.com/products')
           if (Number(cantidad.value) < 1) {
             e.preventDefault();
             document.querySelector("#label").style.color = "red"
+            document.querySelector("#label").innerHTML = "Falta seleccionar cantidad"
           }
         })
 
