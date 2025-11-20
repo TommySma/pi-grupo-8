@@ -52,8 +52,10 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
             return;
         }
+        else{
+            localStorage.setItem("usuario", email.value);
+        }
 
-        localStorage.setItem("usuario", email.value);
-        window.location.href = "index.html";
+       
     });
 });
