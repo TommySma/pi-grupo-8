@@ -41,12 +41,14 @@
 
     <main id="main-forms">
         <h1 id="h1-forms">LOG IN</h1>
-        <form action="index.html" method="GET">
+        <form id="formLogin" action="index.html" method="GET">
             <div>
-                <input type="email" name="email" value="@gmail.com" placeholder="Correo electrónico" required>
+                <input type="email" name="email" id="emailLogin" value="@gmail.com" placeholder="Correo electrónico" required>
+                <div class="invalid-feedback email"></div>
             </div>
             <div>
-                <input type="password" name="password" value="" placeholder="Contraseña" required>
+                <input type="password" name="password" id="passwordLogin" value="" placeholder="Contraseña" required>
+                <div class="invalid-feedback password"></div>
             </div>
             <div>
                 <input type="radio" name="Recordar info">
@@ -55,7 +57,6 @@
             <div>
                 <button type="submit">ENVIAR</button>
             </div>
-
         </form>
         <a id="login" href="./register.html">No tengo una cuenta</a>
     </main>
@@ -87,7 +88,7 @@
 
         </section>
     </footer>
-    <script src="./js/buscador.js"></script>
+<script src="./js/login.js"></script>
 </body>
 
 </html>
