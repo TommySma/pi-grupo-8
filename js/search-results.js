@@ -3,80 +3,51 @@ fetch('https://dummyjson.com/products')
         return response.json();
     })
     .then(function (data) {
-        let busquedaString = sessionStorage.getItem("listaBusqueda")
-        let busqueda = JSON.parse(busquedaString)
 
-        document.querySelector("#titBestseller").innerHTML = `hola,${busqueda}`
+        const params = new URLSearchParams(window.location.search);
+        const terminoOriginal = params.get("buscador") || "";
+        const termino = terminoOriginal.toLowerCase().trim();
 
-    })
-    .catch(function (error) {
-        console.log("Error: " + error);
-    }); 
+        const contenedor = document.querySelector("#bestSeller");
+        let html = "";
 
+        html += `<h1 id="titBestseller">Resultados de búsqueda para: "${terminoOriginal}"</h1>`;
 
+        let resultados = [];
 
+        for (let i = 0; i < data.products.length; i++) {
+            let p = data.products[i];
+            let titulo = p.title.toLowerCase();
 
+            let coincide = true;
 
+            for (let j = 0; j < termino.length; j++) {
+                if (termino[j] !== titulo[j]) {
+                    coincide = false;
+                    break;
+                }
+            }
 
-    fetch('https://dummyjson.com/products')
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (data) {
-
-
-        let buscar = document.querySelector("#input-buscador");
-        let form = document.querySelector("#form-buscador");
-        let categorias = document.querySelector("#lista1")
-        let cate =[]
-        for( let i=0; i<data.products.length; i++){
-            const p = data.products[i];
-            
-            if (!cate.includes(p.category)){
-            categorias.innerHTML +=`<li><a href="./category.html?category=${p.category}">${p.category.toUpperCase()}</a></li>`
-            cate.push(p.category)
-        }  
+            if (coincide && termino.length > 0) {
+                resultados.push(p);
+            }
         }
 
-        
+        if (resultados.length === 0) {
+            html += `<h1 id="noresults">No se han encontrado resultados para: "${terminoOriginal}"</h1>`;
+            contenedor.innerHTML = html;
+            return;
+        }
 
-        form.addEventListener("submit", function (e) {
+        for (let i = 0; i < resultados.length; i++) {
+            const p = resultados[i];
 
-            let texto = buscar.value.toLowerCase();
-            let lista = [];
+            html += `<article class="card"> <img src="${p.images[0]}" alt="${p.title}"> <h2>${p.title}</h2> <p>${p.description}</p> <p>$${p.price}</p> <a href="./product.html?id=${p.id}" class="bt-mas">VER MÁS</a> </article>`;
+        }
 
-            for (let i = 0; i < data.products.length; i++) {
-                let p = data.products[i];
-                let titulo = p.title.toLowerCase();
+        contenedor.innerHTML = html;
 
-                let coincide = true;
-
-                // comparar letra por letra
-                for (let j = 0; j < texto.length; j++) {
-                    if (texto[j] !== titulo[j]) {
-                        coincide = false;
-                        break;
-                    }
-                }
-
-                if (coincide && texto.length > 0){
-                    lista.push(p.id);
-                }
-            }
-
-            if (lista === "") {
-                e.preventDefault();
-                alert("No se encontró ningún producto");
-            } else {
-                alert(`Productos encontrados:\n${lista}`);
-                let listaString = JSON.stringify(lista)
-                sessionStorage.setItem("listaBusqueda",listaString)
-            }
-        });
     })
     .catch(function (error) {
         console.log("Error: " + error);
     });
-
-
-
