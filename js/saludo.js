@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
         lista2.innerHTML = `<li style="margin-right: 10px;"> Bienvenido: ${usuario} </li>`
     } 
     if (btnRegist){
-        lista2.innerHTML += `<li style="margin-right: 10px;">  <a href="#" id="logout">Logout</a> </li>`
+        lista2.innerHTML += `<li style="margin-right: 10px;">  <a href="./login.html" id="logout">Logout</a> </li>`
 
     } 
 

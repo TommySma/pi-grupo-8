@@ -7,22 +7,20 @@ document.addEventListener("DOMContentLoaded", function () {
     } 
 
     btnLogout.addEventListener("click", function (e) {
-        e.preventDefault();
+    
         localStorage.removeItem("usuario");
 
-        let divSaludo = document.querySelector("#saludoUsuario");
-        if (divSaludo) {
-            divSaludo.innerHTML = "";
-        }
-
+        let lista2 = document.querySelector("#lista2")        
+        
+        
+        lista2.innerHTML = `<li><a href="./login.html" id="botonLogin">LOG IN</a></li>`
         let btnLogin = document.querySelector("#botonLogin");
-        let btnRegist = document.querySelector("#botonRegist");
+        btnLogin.style.display = "";
 
-        if (btnLogin){
-            btnLogin.style.display = "";
-        } 
-        if (btnRegist){
-            btnRegist.style.display = "";
-        }
+        
+        
+        lista2.innerHTML += `<li><a href="./register.html" id="botonRegist">REGISTRO</a></li>`
+        let btnRegist = document.querySelector("#botonRegist");
+        btnRegist.style.display = "";
     });
 });
