@@ -6,16 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let btnLogin = document.querySelector("#botonLogin");
     let btnRegist = document.querySelector("#botonRegist");
-    let divSaludo = document.querySelector("#saludoUsuario");
+    let lista2 = document.querySelector("#lista2")
 
     if (btnLogin){
-        btnLogin.style.display = "none";
+        lista2.innerHTML = `<li style="margin-right: 10px;"> Bienvenido: ${usuario} </li>`
     } 
     if (btnRegist){
-        btnRegist.style.display = "none";
+        lista2.innerHTML += `<li style="margin-right: 10px;">  <a href="#" id="logout">Logout</a> </li>`
+
     } 
 
-    if (divSaludo) {
-        divSaludo.innerHTML = `<span style="margin-right: 10px;">Bienvenido: ${usuario}</span> <a href="#" id="logout">Logout</a>`;
-    } 
+    
 });
