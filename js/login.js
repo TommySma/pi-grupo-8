@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    alert("Login.js se cargó correctamente"); 
+    
 
     let form = document.querySelector("#formLogin");
     let email = document.querySelector("#emailLogin");

@@ -3,6 +3,7 @@ fetch('https://dummyjson.com/products')
     return response.json();
   })
   .then(function (data) {
+    //data
     console.log(data);
     const params = new URLSearchParams(window.location.search);
     const id = params.get("id");
