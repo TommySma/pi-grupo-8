@@ -11,4 +11,4 @@ fetch('https://dummyjson.com/products')
     })
     .catch(function (error) {
         console.log("Error: " + error);
-    });
+    }); 
