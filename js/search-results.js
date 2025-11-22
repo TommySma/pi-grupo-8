@@ -16,11 +16,12 @@ fetch('https://dummyjson.com/products')
         for (let i = 0; i < data.products.length; i++) {
             const p = data.products[i];
             let titulo = p.title.toLowerCase();
+            let category = p.category.toLowerCase()
 
             let coincide = true;
 
             for (let j = 0; j < termino.length; j++) {
-                if (termino[j] !== titulo[j]) {
+                if (termino[j] !== titulo[j] && termino[j] !== category[j] ) {
                     coincide = false;
                     break;
                 }
