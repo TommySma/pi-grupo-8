@@ -13,7 +13,10 @@ fetch('https://dummyjson.com/products')
 
       if (p.id == id) {
         document.querySelector("#fotoProduct").innerHTML = `<img src="${p.images[0]}" alt="${p.title}">`;
-        document.querySelector("#tituloProduct").innerHTML = `${p.title} <br> (${p.brand})`;
+        if (p.brand) {
+          document.querySelector("#tituloProduct").innerHTML = `${p.title} <br> (${p.brand})`;
+        }
+        else { document.querySelector("#tituloProduct").innerHTML = `${p.title}` }
         document.querySelector("#precioProduct").innerHTML = `$${p.price}`;
         document.querySelector("#descripcion").innerHTML = `${p.description}`;
         document.querySelector("#datosProduct").innerHTML += `
